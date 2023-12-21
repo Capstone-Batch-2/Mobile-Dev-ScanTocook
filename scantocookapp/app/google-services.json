@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "434859233036",
+    "firebase_url": "https://capstone-project-ch2-ps342-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "capstone-project-ch2-ps342",
+    "storage_bucket": "capstone-project-ch2-ps342.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434859233036:android:92892f483eae27d6078329",
+        "android_client_info": {
+          "package_name": "com.dicoding.testing_models"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcPG1ElIpAWS7Tdd6n_PyFP6ieY4mfBWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434859233036:android:e2ec65e51a1deed1078329",
+        "android_client_info": {
+          "package_name": "com.example.scantocookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcPG1ElIpAWS7Tdd6n_PyFP6ieY4mfBWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

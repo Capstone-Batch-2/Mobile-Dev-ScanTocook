@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/topToolbar"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/tvDetailPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Detail Recipe"
+        android:textColor="@color/british_racing_green"
+        android:textSize="20sp" />
+  </androidx.appcompat.widget.Toolbar>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_marginTop="100dp"
+      android:layout_height="match_parent"
+      app:layout_constraintTop_toBottomOf="@+id/topToolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="330dp"
+          app:cardCornerRadius="10dp"
+          android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/ivDetailRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_notfound"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="26dp">
+
+        <TextView
+            android:id="@+id/tvNameRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="Nama Masakan"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/tvCategoryRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvNameRecipe"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNameRecipe"
+            android:text="Category"
+            android:textSize="18sp"/>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <TextView
+          android:id="@+id/tvInstRecipe"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginBottom="26dp"
+          android:fontFamily="@font/assistant"
+          android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada vestibulum euismod. Curabitur id leo ligula. Vivamus vel maximus magna, vitae iaculis ex. In et varius nisl, at fringilla libero. Fusce blandit non est ac rhoncus. Quisque sagittis nisl magna, ac vestibulum orci tempus at. Nullam in semper ex."
+          tools:ignore="VisualLintLongText" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
